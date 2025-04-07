@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample Elements</title>
+    </head>
+    <body>
+        <header><h1>List of Things We Are Going to Cover</h1></header>
+        <p></p>
+        <h2>Lists</h2>
+        <!--THese lists do not need to be in a specific order. These are a bulleted list -->
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Unordered Lists</li>
+            <li>Ordered Lists</li>
+            <li>Divs, Spans</li>
+            <li>Tables</li>
+            <li>Forms</li>
+        </ul>
+
+        <!--ORdered Lists that have an order or numbers, letters, etc.-->
+        <h3>Ordered Lists</h3>
+        <ol>
+            <li>Comments</li>
+            <li>Other Cool Things</li>
+            <li>This will be a list!</li>
+        </ol>
+
+        <!--Divs are just simple containers that can house multiple elements-->
+        <!--Div takes up the entire width of the screen and the height of the content-->
+        <!--can be both parent and child elements-->
+        <div style="background-color:black; color:white">
+            Hi I'm the parent!
+            <div>
+                I'm the child!!
+            </div>
+        </div>
+
+        <!--spans are like divs-->
+        <!--only takes the width and height of the content itself - really good for a highlight effect-->
+        <span style="background-color: rgb(255, 0, 0); color:white">
+            hi there
+        </span>
+        <br></br>
+        
+        
+        <!--Tables is an element that has rows and columns-->
+        <h3>Table!!</h3>
+        <table style="width:500px; border-style:solid;border-width:1px ">
+            <!--thead is a semantic header-->
+            <thead>
+                <tr> <!-- tr represents table row -->
+                    <th>A</th> <!--th tag is the tag that defines column header-->
+                    <th>B</th>
+                    <th>C</th>
+                </tr> 
+            </thead>
+            <tr>
+                <td>Cell 1</td> <!-- td means table data -->
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+            </tr>
+            <tr>
+                <td>Cell A</td>
+                <td>Cell B</td>
+                <td>Cell C</td>
+            </tr>  
+        </table>
+
+        <h3>Inputs and Forms</h3>
+        <p>there is a list of inputs on W3 website :D</p>
+        <br>
+
+        <form style="display: block;">
+            <label>Name: </label>
+            <p><input type="text"></p>
+            <p><label>URL: </label></p>
+            <p><input type="url"></p>
+            <label>Favorite Color</label>
+            <input type="color">
+            <input type="button" value="Press me!">
+        </form>
+
+    </body>
+</html>
