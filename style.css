@@ -217,6 +217,7 @@ hr{
 
 .About > p {
     padding-left: 20px;
+    padding-right: 20px;
     font-family: "Manrope", sans-serif;
     color: var(--darkGreen);
     font-size: var(--pSize);
