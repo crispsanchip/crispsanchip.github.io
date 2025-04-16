@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dice Game</title>
+        <!--<script src="./dice_game.js"></script>-->
+        <script>
+
+            function getUserName() {
+                let name = prompt("Hi there! Welcome to the game", "Some Name");
+                return name;
+            }
+
+            //let x = getUserName();
+
+            function confirmPlay(){
+                let name = getUserName();
+                let confirmUser = confirm(`Hey, ${name}, are you ready to play?`);
+                return confirmUser;
+            }
+
+            function rollDice(){
+
+
+                let playerReady = confirmPlay();
+
+                switch(playerReady) {
+                    case true:
+                        let diceRoll = (Math.floor(Math.random()*20) + 1);
+                        console.log(diceRoll);
+                        return diceRoll;
+                        break;
+                    case false:
+                        console.log("That's a shame, please reload if you want to play!");
+                        return "none";
+                        break;
+                    default:
+                        console.log(`Error, chances are it's the playerReady varaible: ${playerReady}`);
+                    }
+            }
+
+            function diceGame(){
+                let dice = rollDice();
+
+                if(dice == 1){
+                    console.log("Critical Failure");
+                } else if(dice > 1 && dice <= 10){
+                    console.log("Dragon notices you and you don't get treasure.")
+                } else if(dice > 10 && dice < 20){
+                    console.log("You get treasure but the dragon notics you and you have to run away");
+                } else if(dice == 20) {
+                    console.log("Critical Success!"); 
+                }
+            }
+
+            diceGame();
+
+        </script>
+    </head>
+</html>
