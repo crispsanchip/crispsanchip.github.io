@@ -165,6 +165,8 @@ function done(){
     const random = document.getElementById("random_button");
     random.disabled = true;
     document.getElementById("random_button").style.opacity = "0%";
+
+    document.getElementById("dressText").textContent="you did it!! ☆";
 }
 
 function fixButtons(){
@@ -198,4 +200,6 @@ function fixButtons(){
     const random = document.getElementById("random_button");
     random.disabled = false;
     document.getElementById("random_button").style.opacity = "100%";
+
+    document.getElementById("dressText").textContent="dress her up";
 }
