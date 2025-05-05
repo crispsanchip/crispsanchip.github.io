@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dress Up Dina!!</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&family=Imprima&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+
+    
+
+    <body>
+        <div class="wrapper">
+            <div class="empty"></div>
+            <div class="dress-text"><h2>dress her up!</h2></div>
+            
+            <div class="container_dress">
+
+                <!--this div contains the random and undo button-->
+                <div class="box1">
+                    <button id="random_button">
+                        <img id="random_button" src="images\icons\icon_restart.png">
+                    </button>
+                    <button id="restart_button">
+                        <img id="restart_button" src="images\icons\icon_random.png">
+                    </button>
+                </div>
+    
+    
+                <!--this div contains the contents of the images for the dress up game-->
+                <div class="box2">
+                    <div id="background">
+                        <div id="hairback">
+                            <img src="images\clothes01\hairback01.png" id="hairbackImg">
+                        </div>
+                        <div id="base">
+                            <img id="base" src="images\base.png">
+                        </div>
+                        <div id="shoes">
+                            <img src="images\clothes01\shoes01.png" id="shoesImg">
+                        </div>
+                        <div id="pants">
+                            <img src="images\clothes01\pant01.png" id="pantsImg">
+                        </div>
+                        <div id="shirt">
+                            <img src="images\clothes01\shirt01.png" id="shirtImg">
+                        </div>
+                        <div id="hairfront">
+                            <img src="images\clothes01\hair01.png" id="hairfrontImg">
+                        </div>
+                    </div>
+                </div>
+    
+                <!--this div contains the arrows-->
+                <div class="box3">
+                    <button id="arrow1" value="NEXT" onclick="nextHair()">
+                        <img  src="images\arrow.png">
+                    </button>
+                    <button id="arrow2" value="NEXT" onclick="nextShirt()">
+                        <img src="images\arrow.png">
+                    </button>
+                    <button id="arrow3" value="NEXT" onclick="nextPant()">
+                        <img  src="images\arrow.png">
+                    </button>
+                    <button id="arrow4" value="NEXT" onclick="nextShoes()">
+                        <img src="images\arrow.png">
+                    </button>
+                </div>
+    
+                <!--this div contains the icons for the arrow buttons-->
+                <div class="box4">
+                    <img id="tag_hair" src="images\icons\icon_hair.png">
+                    <img id="tag_shirt" src="images\icons\icon_shirt.png">
+                    <img id="tag_pant" src="images\icons\icon_pant.png">
+                    <img id="tag_shoe" src="images\icons\icon_shoe.png">
+                </div>
+    
+            </div>
+    
+            <div class="box"></div>
+            <div class="shadow"></div>
+            
+            <div class="button"><button><a href='/index.html'>Done!! ˙⋆✮</a></button></div>
+            
+        </div>
+
+        
+    </body>
+</html>
