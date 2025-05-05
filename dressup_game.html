@@ -20,11 +20,11 @@
 
                 <!--this div contains the random and undo button-->
                 <div class="box1">
-                    <button id="random_button">
-                        <img id="random_button" src="images\icons\icon_restart.png">
+                    <button id="restart_button" value="NEXT" onclick="restart()">
+                        <img id="restart_button" src="images\icons\icon_restart.png">
                     </button>
-                    <button id="restart_button">
-                        <img id="restart_button" src="images\icons\icon_random.png">
+                    <button id="random_button" value="NEXT" onclick="random()">
+                        <img id="random_button" src="images\icons\icon_random.png">
                     </button>
                 </div>
     
@@ -82,8 +82,9 @@
             <div class="box"></div>
             <div class="shadow"></div>
             
-            <div class="button"><button><a href='/index.html'>Done!! ˙⋆✮</a></button></div>
-            
+            <!--<div class="button" onclick="done()"><button><a href='/index.html'>Done!! ˙⋆✮</a></button></div>-->
+            <div class="button" value="NEXT"onclick="done()"><button id="button"><a>Done!! ˙⋆✮</a></button></div>
+
         </div>
 
         

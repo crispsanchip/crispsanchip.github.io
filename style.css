@@ -247,6 +247,12 @@ p{
     font-weight: 400;
 }
 
+.button > button:hover{
+    border-width: 3px;
+    border-color: var(--white);
+    background-color: var(--light-green);
+}
+
 /*
 #start-button{
     background-color: var(--green);
